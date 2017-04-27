@@ -10,7 +10,7 @@ $('selector').starScore({
   fullImgUrl : 'images/star-full.png',  //有分数的星星图片 
   prompts : ['很差!','差!','一般!','还可以!','非常好!'],  //每颗星星悬停提示文字 
   readonly : false,  //只读 
-  showScoreElement : '#show-score'  //显示分数的元素
+  showScoreElement : 'selector'  //显示分数的元素
 }).bind('changeScore',function(e){  //分数更改(点击星星打分时)
   alert(e.score);  //更改后的分数
 });
