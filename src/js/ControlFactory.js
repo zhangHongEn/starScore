@@ -98,7 +98,7 @@
 					$(Constructor.prototype.ENABLED_SELECTOR).each(function(){
 						var data = $.getDataset(this);
 						if(typeof Constructor.prototype.GET_DATASET === 'function') data = Constructor.prototype.GET_DATASET(data);
-						$(this).starScore($.extend(Constructor.defaultParams,data,{element:this}));
+						$(Constructor.prototype.ENABLED_SELECTOR)[Constructor.prototype.NAME]($.extend(Constructor.defaultParams,data,{element:this}));
 					});
 				});
 			}
